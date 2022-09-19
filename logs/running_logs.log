@@ -1,0 +1,283 @@
+[2022-09-17 19:34:29,285: INFO: stage_01_get_data]: 
+********************
+[2022-09-17 19:34:29,285: INFO: stage_01_get_data]: >>>>> stage STAGE_NAME started <<<<<
+[2022-09-17 19:34:29,290: INFO: common]: yaml file: configs/config.yaml loaded successfully
+[2022-09-17 19:34:29,290: INFO: common]: yaml file: params.yaml loaded successfully
+[2022-09-17 19:34:29,290: INFO: stage_01_get_data]: >>>>> stage STAGE_NAME completed!<<<<<
+
+[2022-09-17 22:31:05,481: INFO: stage_01_get_data]: 
+********************
+[2022-09-17 22:31:05,481: INFO: stage_01_get_data]: >>>>> stage STAGE_NAME started <<<<<
+[2022-09-17 22:31:05,483: INFO: common]: yaml file: configs/config.yaml loaded successfully
+[2022-09-17 22:31:05,483: INFO: common]: yaml file: params.yaml loaded successfully
+[2022-09-17 22:31:05,483: INFO: stage_01_get_data]: >>>>> stage STAGE_NAME completed!<<<<<
+
+[2022-09-17 22:31:17,725: INFO: stage_01_get_data]: 
+********************
+[2022-09-17 22:31:17,725: INFO: stage_01_get_data]: >>>>> stage STAGE_NAME started <<<<<
+[2022-09-17 22:31:17,725: INFO: common]: yaml file: configs/config.yaml loaded successfully
+[2022-09-17 22:31:17,730: INFO: common]: created directory at: data
+[2022-09-17 22:31:17,730: INFO: stage_01_get_data]: downloading started...
+[2022-09-17 22:31:18,329: ERROR: stage_01_get_data]: HTTP Error 400: Bad Request
+Traceback (most recent call last):
+  File "src/stage_01_get_data.py", line 59, in <module>
+    main(config_path=parsed_args.config, params_path=parsed_args.params)
+  File "src/stage_01_get_data.py", line 35, in main
+    filename, headers = req.urlretrieve(URL, data_file_path)
+  File "C:\Users\aakas\Documents\projects\computer vision\MLflow-classifire-CNN\env\lib\urllib\request.py", line 247, in urlretrieve
+    with contextlib.closing(urlopen(url, data)) as fp:
+  File "C:\Users\aakas\Documents\projects\computer vision\MLflow-classifire-CNN\env\lib\urllib\request.py", line 222, in urlopen
+    return opener.open(url, data, timeout)
+  File "C:\Users\aakas\Documents\projects\computer vision\MLflow-classifire-CNN\env\lib\urllib\request.py", line 531, in open
+    response = meth(req, response)
+  File "C:\Users\aakas\Documents\projects\computer vision\MLflow-classifire-CNN\env\lib\urllib\request.py", line 641, in http_response
+    'http', request, response, code, msg, hdrs)
+  File "C:\Users\aakas\Documents\projects\computer vision\MLflow-classifire-CNN\env\lib\urllib\request.py", line 569, in error
+    return self._call_chain(*args)
+  File "C:\Users\aakas\Documents\projects\computer vision\MLflow-classifire-CNN\env\lib\urllib\request.py", line 503, in _call_chain
+    result = func(*args)
+  File "C:\Users\aakas\Documents\projects\computer vision\MLflow-classifire-CNN\env\lib\urllib\request.py", line 649, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 400: Bad Request
+[2022-09-18 11:49:23,759: INFO: stage_01_get_data]: 
+********************
+[2022-09-18 11:49:23,759: INFO: stage_01_get_data]: >>>>> stage STAGE_NAME started <<<<<
+[2022-09-18 11:49:23,765: INFO: common]: yaml file: configs/config.yaml loaded successfully
+[2022-09-18 11:49:23,766: INFO: common]: created directory at: data
+[2022-09-18 11:49:23,766: INFO: stage_01_get_data]: downloading started...
+[2022-09-18 11:49:23,768: ERROR: stage_01_get_data]: <urlopen error unknown url type: https>
+Traceback (most recent call last):
+  File "c:/Users/aakas/Documents/projects/computer vision/MLflow-classifire-CNN/src/stage_01_get_data.py", line 50, in <module>
+    main(config_path=parsed_args.config, params_path=parsed_args.params)
+  File "c:/Users/aakas/Documents/projects/computer vision/MLflow-classifire-CNN/src/stage_01_get_data.py", line 34, in main
+    filename, headers = req.urlretrieve(URL, data_file_path)
+  File "C:\Users\aakas\Documents\projects\computer vision\MLflow-classifire-CNN\env\lib\urllib\request.py", line 247, in urlretrieve
+    with contextlib.closing(urlopen(url, data)) as fp:
+  File "C:\Users\aakas\Documents\projects\computer vision\MLflow-classifire-CNN\env\lib\urllib\request.py", line 222, in urlopen
+    return opener.open(url, data, timeout)
+  File "C:\Users\aakas\Documents\projects\computer vision\MLflow-classifire-CNN\env\lib\urllib\request.py", line 525, in open
+    response = self._open(req, data)
+  File "C:\Users\aakas\Documents\projects\computer vision\MLflow-classifire-CNN\env\lib\urllib\request.py", line 548, in _open
+    'unknown_open', req)
+  File "C:\Users\aakas\Documents\projects\computer vision\MLflow-classifire-CNN\env\lib\urllib\request.py", line 503, in _call_chain
+    result = func(*args)
+  File "C:\Users\aakas\Documents\projects\computer vision\MLflow-classifire-CNN\env\lib\urllib\request.py", line 1420, in unknown_open
+    raise URLError('unknown url type: %s' % type)
+urllib.error.URLError: <urlopen error unknown url type: https>
+[2022-09-18 11:50:02,222: INFO: stage_01_get_data]: 
+********************
+[2022-09-18 11:50:02,222: INFO: stage_01_get_data]: >>>>> stage STAGE_NAME started <<<<<
+[2022-09-18 11:50:02,225: INFO: common]: yaml file: configs/config.yaml loaded successfully
+[2022-09-18 11:50:02,229: INFO: common]: created directory at: data
+[2022-09-18 11:50:02,229: INFO: stage_01_get_data]: downloading started...
+[2022-09-18 11:50:02,232: ERROR: stage_01_get_data]: <urlopen error unknown url type: https>
+Traceback (most recent call last):
+  File "c:/Users/aakas/Documents/projects/computer vision/MLflow-classifire-CNN/src/stage_01_get_data.py", line 50, in <module>
+    main(config_path=parsed_args.config, params_path=parsed_args.params)
+  File "c:/Users/aakas/Documents/projects/computer vision/MLflow-classifire-CNN/src/stage_01_get_data.py", line 34, in main
+    filename, headers = req.urlretrieve(URL, data_file_path)
+  File "C:\Users\aakas\Documents\projects\computer vision\MLflow-classifire-CNN\env\lib\urllib\request.py", line 247, in urlretrieve
+    with contextlib.closing(urlopen(url, data)) as fp:
+  File "C:\Users\aakas\Documents\projects\computer vision\MLflow-classifire-CNN\env\lib\urllib\request.py", line 222, in urlopen
+    return opener.open(url, data, timeout)
+  File "C:\Users\aakas\Documents\projects\computer vision\MLflow-classifire-CNN\env\lib\urllib\request.py", line 525, in open
+    response = self._open(req, data)
+  File "C:\Users\aakas\Documents\projects\computer vision\MLflow-classifire-CNN\env\lib\urllib\request.py", line 548, in _open
+    'unknown_open', req)
+  File "C:\Users\aakas\Documents\projects\computer vision\MLflow-classifire-CNN\env\lib\urllib\request.py", line 503, in _call_chain
+    result = func(*args)
+  File "C:\Users\aakas\Documents\projects\computer vision\MLflow-classifire-CNN\env\lib\urllib\request.py", line 1420, in unknown_open
+    raise URLError('unknown url type: %s' % type)
+urllib.error.URLError: <urlopen error unknown url type: https>
+[2022-09-18 12:02:45,568: INFO: stage_01_get_data]: 
+********************
+[2022-09-18 12:02:45,568: INFO: stage_01_get_data]: >>>>> stage STAGE_NAME started <<<<<
+[2022-09-18 12:02:45,572: INFO: common]: yaml file: configs/config.yaml loaded successfully
+[2022-09-18 12:02:45,572: INFO: common]: created directory at: data
+[2022-09-18 12:02:45,572: INFO: stage_01_get_data]: downloading started...
+[2022-09-18 12:02:45,572: ERROR: stage_01_get_data]: <urlopen error unknown url type: https>
+Traceback (most recent call last):
+  File "c:/Users/aakas/Documents/projects/computer vision/MLflow-classifire-CNN/src/stage_01_get_data.py", line 49, in <module>
+    main(config_path=parsed_args.config, params_path=parsed_args.params)
+  File "c:/Users/aakas/Documents/projects/computer vision/MLflow-classifire-CNN/src/stage_01_get_data.py", line 33, in main
+    filename, headers = req.urlretrieve(URL, data_file_path)
+  File "C:\Users\aakas\Documents\projects\computer vision\MLflow-classifire-CNN\env\lib\urllib\request.py", line 247, in urlretrieve
+    with contextlib.closing(urlopen(url, data)) as fp:
+  File "C:\Users\aakas\Documents\projects\computer vision\MLflow-classifire-CNN\env\lib\urllib\request.py", line 222, in urlopen
+    return opener.open(url, data, timeout)
+  File "C:\Users\aakas\Documents\projects\computer vision\MLflow-classifire-CNN\env\lib\urllib\request.py", line 525, in open
+    response = self._open(req, data)
+  File "C:\Users\aakas\Documents\projects\computer vision\MLflow-classifire-CNN\env\lib\urllib\request.py", line 548, in _open
+    'unknown_open', req)
+  File "C:\Users\aakas\Documents\projects\computer vision\MLflow-classifire-CNN\env\lib\urllib\request.py", line 503, in _call_chain
+    result = func(*args)
+  File "C:\Users\aakas\Documents\projects\computer vision\MLflow-classifire-CNN\env\lib\urllib\request.py", line 1420, in unknown_open
+    raise URLError('unknown url type: %s' % type)
+urllib.error.URLError: <urlopen error unknown url type: https>
+[2022-09-18 12:03:18,782: INFO: stage_01_get_data]: 
+********************
+[2022-09-18 12:03:18,783: INFO: stage_01_get_data]: >>>>> stage STAGE_NAME started <<<<<
+[2022-09-18 12:03:18,785: INFO: common]: yaml file: configs/config.yaml loaded successfully
+[2022-09-18 12:03:18,786: INFO: common]: created directory at: data
+[2022-09-18 12:03:18,786: INFO: stage_01_get_data]: downloading started...
+[2022-09-18 12:03:18,786: ERROR: stage_01_get_data]: <urlopen error unknown url type: https>
+Traceback (most recent call last):
+  File "c:/Users/aakas/Documents/projects/computer vision/MLflow-classifire-CNN/src/stage_01_get_data.py", line 49, in <module>
+    main(config_path=parsed_args.config, params_path=parsed_args.params)
+  File "c:/Users/aakas/Documents/projects/computer vision/MLflow-classifire-CNN/src/stage_01_get_data.py", line 33, in main
+    filename, headers = req.urlretrieve(URL, data_file_path)
+  File "C:\Users\aakas\Documents\projects\computer vision\MLflow-classifire-CNN\env\lib\urllib\request.py", line 247, in urlretrieve
+    with contextlib.closing(urlopen(url, data)) as fp:
+  File "C:\Users\aakas\Documents\projects\computer vision\MLflow-classifire-CNN\env\lib\urllib\request.py", line 222, in urlopen
+    return opener.open(url, data, timeout)
+  File "C:\Users\aakas\Documents\projects\computer vision\MLflow-classifire-CNN\env\lib\urllib\request.py", line 525, in open
+    response = self._open(req, data)
+  File "C:\Users\aakas\Documents\projects\computer vision\MLflow-classifire-CNN\env\lib\urllib\request.py", line 548, in _open
+    'unknown_open', req)
+  File "C:\Users\aakas\Documents\projects\computer vision\MLflow-classifire-CNN\env\lib\urllib\request.py", line 503, in _call_chain
+    result = func(*args)
+  File "C:\Users\aakas\Documents\projects\computer vision\MLflow-classifire-CNN\env\lib\urllib\request.py", line 1420, in unknown_open
+    raise URLError('unknown url type: %s' % type)
+urllib.error.URLError: <urlopen error unknown url type: https>
+[2022-09-18 13:00:11,387: INFO: stage_01_get_data]: 
+********************
+[2022-09-18 13:00:11,389: INFO: stage_01_get_data]: >>>>> stage GET_DATA started <<<<<
+[2022-09-18 13:00:11,391: INFO: common]: yaml file: configs/config.yaml loaded successfully
+[2022-09-18 13:00:11,392: INFO: common]: created directory at: data
+[2022-09-18 13:00:11,392: INFO: stage_01_get_data]: downloading started...
+[2022-09-18 13:00:11,393: ERROR: stage_01_get_data]: <urlopen error unknown url type: https>
+Traceback (most recent call last):
+  File "c:/Users/aakas/Documents/projects/computer vision/MLflow-classifire-CNN/src/stage_01_get_data.py", line 48, in <module>
+    main(config_path=parsed_args.config)
+  File "c:/Users/aakas/Documents/projects/computer vision/MLflow-classifire-CNN/src/stage_01_get_data.py", line 33, in main
+    filename, headers = req.urlretrieve(URL, data_file_path)
+  File "C:\Users\aakas\Documents\projects\computer vision\MLflow-classifire-CNN\env\lib\urllib\request.py", line 247, in urlretrieve
+    with contextlib.closing(urlopen(url, data)) as fp:
+  File "C:\Users\aakas\Documents\projects\computer vision\MLflow-classifire-CNN\env\lib\urllib\request.py", line 222, in urlopen
+    return opener.open(url, data, timeout)
+  File "C:\Users\aakas\Documents\projects\computer vision\MLflow-classifire-CNN\env\lib\urllib\request.py", line 525, in open
+    response = self._open(req, data)
+  File "C:\Users\aakas\Documents\projects\computer vision\MLflow-classifire-CNN\env\lib\urllib\request.py", line 548, in _open
+    'unknown_open', req)
+  File "C:\Users\aakas\Documents\projects\computer vision\MLflow-classifire-CNN\env\lib\urllib\request.py", line 503, in _call_chain
+    result = func(*args)
+  File "C:\Users\aakas\Documents\projects\computer vision\MLflow-classifire-CNN\env\lib\urllib\request.py", line 1420, in unknown_open
+    raise URLError('unknown url type: %s' % type)
+urllib.error.URLError: <urlopen error unknown url type: https>
+[2022-09-18 13:07:09,264: INFO: stage_01_get_data]: 
+********************
+[2022-09-18 13:07:09,268: INFO: stage_01_get_data]: >>>>> stage GET_DATA started <<<<<
+[2022-09-18 13:07:09,270: INFO: common]: yaml file: configs/config.yaml loaded successfully
+[2022-09-18 13:07:09,278: INFO: common]: created directory at: data
+[2022-09-18 13:07:09,278: INFO: stage_01_get_data]: downloading started...
+[2022-09-18 13:07:09,284: ERROR: stage_01_get_data]: <urlopen error unknown url type: https>
+Traceback (most recent call last):
+  File "c:/Users/aakas/Documents/projects/computer vision/MLflow-classifire-CNN/src/stage_01_get_data.py", line 49, in <module>
+    main(config_path=parsed_args.config)
+  File "c:/Users/aakas/Documents/projects/computer vision/MLflow-classifire-CNN/src/stage_01_get_data.py", line 34, in main
+    filename, headers = req.urlretrieve(URL, data_file_path)
+  File "C:\Users\aakas\Documents\projects\computer vision\MLflow-classifire-CNN\env\lib\urllib\request.py", line 247, in urlretrieve
+    with contextlib.closing(urlopen(url, data)) as fp:
+  File "C:\Users\aakas\Documents\projects\computer vision\MLflow-classifire-CNN\env\lib\urllib\request.py", line 222, in urlopen
+    return opener.open(url, data, timeout)
+  File "C:\Users\aakas\Documents\projects\computer vision\MLflow-classifire-CNN\env\lib\urllib\request.py", line 525, in open
+    response = self._open(req, data)
+  File "C:\Users\aakas\Documents\projects\computer vision\MLflow-classifire-CNN\env\lib\urllib\request.py", line 548, in _open
+    'unknown_open', req)
+  File "C:\Users\aakas\Documents\projects\computer vision\MLflow-classifire-CNN\env\lib\urllib\request.py", line 503, in _call_chain
+    result = func(*args)
+  File "C:\Users\aakas\Documents\projects\computer vision\MLflow-classifire-CNN\env\lib\urllib\request.py", line 1420, in unknown_open
+    raise URLError('unknown url type: %s' % type)
+urllib.error.URLError: <urlopen error unknown url type: https>
+[2022-09-18 13:19:06,097: INFO: stage_01_get_data]: 
+********************
+[2022-09-18 13:19:06,097: INFO: stage_01_get_data]: >>>>> stage GET_DATA started <<<<<
+[2022-09-18 13:19:06,098: INFO: common]: yaml file: configs/config.yaml loaded successfully
+[2022-09-18 13:19:06,179: INFO: common]: created directory at: data
+[2022-09-18 13:19:06,180: INFO: stage_01_get_data]: downloading started...
+[2022-09-18 13:19:06,182: ERROR: stage_01_get_data]: <urlopen error unknown url type: https>
+Traceback (most recent call last):
+  File "c:/Users/aakas/Documents/projects/computer vision/MLflow-classifire-CNN/src/stage_01_get_data.py", line 49, in <module>
+    main(config_path=parsed_args.config)
+  File "c:/Users/aakas/Documents/projects/computer vision/MLflow-classifire-CNN/src/stage_01_get_data.py", line 34, in main
+    filename, headers = req.urlretrieve(URL, data_file_path)
+  File "C:\Users\aakas\Documents\projects\computer vision\MLflow-classifire-CNN\env\lib\urllib\request.py", line 247, in urlretrieve
+    with contextlib.closing(urlopen(url, data)) as fp:
+  File "C:\Users\aakas\Documents\projects\computer vision\MLflow-classifire-CNN\env\lib\urllib\request.py", line 222, in urlopen
+    return opener.open(url, data, timeout)
+  File "C:\Users\aakas\Documents\projects\computer vision\MLflow-classifire-CNN\env\lib\urllib\request.py", line 525, in open
+    response = self._open(req, data)
+  File "C:\Users\aakas\Documents\projects\computer vision\MLflow-classifire-CNN\env\lib\urllib\request.py", line 548, in _open
+    'unknown_open', req)
+  File "C:\Users\aakas\Documents\projects\computer vision\MLflow-classifire-CNN\env\lib\urllib\request.py", line 503, in _call_chain
+    result = func(*args)
+  File "C:\Users\aakas\Documents\projects\computer vision\MLflow-classifire-CNN\env\lib\urllib\request.py", line 1420, in unknown_open
+    raise URLError('unknown url type: %s' % type)
+urllib.error.URLError: <urlopen error unknown url type: https>
+[2022-09-18 13:22:21,436: INFO: stage_01_get_data]: 
+********************
+[2022-09-18 13:22:21,436: INFO: stage_01_get_data]: >>>>> stage GET_DATA started <<<<<
+[2022-09-18 13:22:21,436: INFO: common]: yaml file: configs/config.yaml loaded successfully
+[2022-09-18 13:22:21,589: INFO: common]: created directory at: data
+[2022-09-18 13:22:21,589: INFO: stage_01_get_data]: downloading started...
+[2022-09-18 13:23:29,641: INFO: stage_01_get_data]: filename:data\data.zip created with info 
+Content-Type: application/octet-stream
+Accept-Ranges: bytes
+Server: Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0
+x-ms-blob-content-md5: 4TekUHNw2UJGm20meiTqBA==
+Last-Modified: Mon, 09 May 2022 20:42:07 GMT
+ETag: "0x8DA31FC621E01C4"
+Content-Length: 824887076
+Date: Sun, 18 Sep 2022 07:52:20 GMT
+Connection: close
+
+
+[2022-09-18 13:23:29,641: INFO: stage_01_get_data]: >>>>> stage GET_DATA completed!<<<<<
+
+[2022-09-19 06:19:19,232: INFO: stage_01_get_data]: 
+********************
+[2022-09-19 06:19:19,232: INFO: stage_01_get_data]: >>>>> stage GET_DATA started <<<<<
+[2022-09-19 06:19:19,239: INFO: common]: yaml file: configs/config.yaml loaded successfully
+[2022-09-19 06:19:19,244: INFO: common]: created directory at: data
+[2022-09-19 06:19:19,245: INFO: stage_01_get_data]: filename:data.zip already present
+[2022-09-19 06:19:19,245: INFO: stage_01_get_data]: data already extracted
+[2022-09-19 06:19:19,246: INFO: stage_01_get_data]: >>>>> stage GET_DATA completed!<<<<<
+
+[2022-09-19 06:20:13,818: INFO: stage_01_get_data]: 
+********************
+[2022-09-19 06:20:13,818: INFO: stage_01_get_data]: >>>>> stage GET_DATA started <<<<<
+[2022-09-19 06:20:13,818: INFO: common]: yaml file: configs/config.yaml loaded successfully
+[2022-09-19 06:20:13,823: INFO: common]: created directory at: data
+[2022-09-19 06:20:13,823: INFO: stage_01_get_data]: filename:data.zip already present
+[2022-09-19 06:20:13,824: INFO: stage_01_get_data]: data already extracted
+[2022-09-19 06:20:13,824: INFO: stage_01_get_data]: >>>>> stage GET_DATA completed!<<<<<
+
+[2022-09-19 06:21:56,463: INFO: stage_01_get_data]: 
+********************
+[2022-09-19 06:21:56,463: INFO: stage_01_get_data]: >>>>> stage GET_DATA started <<<<<
+[2022-09-19 06:21:56,469: INFO: common]: yaml file: configs/config.yaml loaded successfully
+[2022-09-19 06:21:56,471: INFO: common]: created directory at: data
+[2022-09-19 06:21:56,471: INFO: stage_01_get_data]: filename:data.zip already present
+[2022-09-19 06:21:56,471: INFO: stage_01_get_data]: data already extracted
+[2022-09-19 06:21:56,471: INFO: stage_01_get_data]: >>>>> stage GET_DATA completed!<<<<<
+
+[2022-09-19 06:23:22,652: INFO: stage_01_get_data]: 
+********************
+[2022-09-19 06:23:22,652: INFO: stage_01_get_data]: >>>>> stage GET_DATA started <<<<<
+[2022-09-19 06:23:22,657: INFO: common]: yaml file: configs/config.yaml loaded successfully
+[2022-09-19 06:23:22,657: INFO: common]: created directory at: data
+[2022-09-19 06:23:22,657: INFO: stage_01_get_data]: filename:data.zip already present
+[2022-09-19 06:23:22,657: INFO: stage_01_get_data]: data already extracted
+[2022-09-19 06:23:22,657: INFO: stage_01_get_data]: >>>>> stage GET_DATA completed!<<<<<
+
+[2022-09-19 06:36:21,623: INFO: stage_01_get_data]: 
+********************
+[2022-09-19 06:36:21,623: INFO: stage_01_get_data]: >>>>> stage GET_DATA started <<<<<
+[2022-09-19 06:36:21,628: INFO: common]: yaml file: configs/config.yaml loaded successfully
+[2022-09-19 06:36:21,628: INFO: common]: created directory at: data
+[2022-09-19 06:36:21,628: INFO: stage_01_get_data]: filename:data.zip already present
+[2022-09-19 06:36:21,628: INFO: common]: created directory at: data
+[2022-09-19 06:36:21,628: INFO: common]: extraction started...
+[2022-09-19 06:48:39,303: INFO: common]: extracted data\data.zip to data
+[2022-09-19 06:48:39,316: INFO: stage_01_get_data]: >>>>> stage GET_DATA completed!<<<<<
+
